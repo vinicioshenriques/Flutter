@@ -7,9 +7,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new  MaterialApp(
-      title: 'alavras Pareadas em Inglês',
+      title: 'Gerador de Palavras em Inglês',
       theme: new ThemeData(          // Add the 3 lines from here...
-        primaryColor: Colors.amberAccent,
+        primaryColor: Colors.deepOrange,
       ),                             // ... to here.
       home: new RandomWords(),
     );
@@ -24,7 +24,7 @@ class RandomWordsState extends State<RandomWords>{
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Palavras Pareadas em Inglês'),
+        title: new Text('Gerador de Palavras em Inglês'),
         actions: <Widget>[      // Add 3 lines from here...
           new IconButton(icon: const Icon(Icons.list), onPressed: _pushSaved),
         ],                      // ... to here.
